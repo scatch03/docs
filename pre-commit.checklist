@@ -1,0 +1,10 @@
+
+1. If there is some configuration to be applied during release process - add full description on release page: http://confluence.itmgdev.net/display/DEV/Release+[release_number]. If page is absent - create it.
+
+2. Add description of newly introduced properties to http://confluence.itmgdev.net/display/EPOM/List+of+application.properties page.
+
+3. If task requires alteration of database schema, make sure not to introduce backwards incompatible changes right away, since it will make much harder to revert unsuccessful release to previous codebase. Create separate tasks for such changes to be done in future, predicated on successful release. 
+
+4. Do not forget to add entries to User Action Log (com.epom.service.ActionLogService) when some actions are performed which affect ad delivery a great deal (Daisy Chaining On/Off, Rules On/Off, etc).
+
+
