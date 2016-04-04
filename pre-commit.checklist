@@ -1,13 +1,23 @@
 
-1. If there is some configuration to be applied on production servers during release process - add full description on corresponding release page: http://confluence.itmgdev.net/display/DEV/Release+[release_number]. If page is absent - create it.
+1. If there is some configuration to be applied on production servers during 
+   release process - add full description on corresponding release 
+   page: http://confluence.itmgdev.net/display/DEV/Release+[release_number]. 
+   If page is absent - create it.
 
-2. Add description of newly introduced application properties to http://confluence.itmgdev.net/display/EPOM/List+of+application.properties page.
+2. Add description of newly introduced application properties to 
+   http://confluence.itmgdev.net/display/EPOM/List+of+application.properties page.
 
-3. If task requires alteration of database schema, make sure not to introduce backwards incompatible changes right away, since it will make much harder to revert unsuccessful release to previous codebase. Create separate tasks for such changes, to be done in future, predicated on successful release. 
+3. If task requires alteration of database schema, make sure not to introduce 
+   backwards incompatible changes right away, since it will make much harder to revert unsuccessful 
+   release to previous codebase. Create separate tasks for such changes, to be done in future, 
+   predicated on successful release. 
 
-4. Do not forget to add entries to User Action Log (com.epom.service.ActionLogService) when some actions are performed which affect ad delivery a great deal (Daisy Chaining On/Off, Rules On/Off, etc).
+4. Do not forget to add entries to User Action Log (com.epom.service.ActionLogService) when some 
+   actions are performed which affect ad delivery a great deal (Daisy Chaining On/Off, Rules On/Off, etc).
 
-5. Provide short (preferably <10 sentences), well-formed implementation note for each task, precisely and concisely describing what was done, how it works and what are exact settings that control its operation.
+5. Provide short (preferably <10 sentences), well-formed implementation note for each task, 
+   precisely and concisely describing what was done, how it works and what are exact settings 
+   that control its operation.
 
 6. Perform SQL schema alteration within single ALTER statement.
 
