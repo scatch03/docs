@@ -21,4 +21,7 @@
 
 6. Perform SQL schema alteration within single ALTER statement.
 
+7. Perform smoke-testing and append both cases and corresponding results after implementation note.
+
+
 
