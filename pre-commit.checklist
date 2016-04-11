@@ -23,5 +23,8 @@
 
 7. Perform smoke-testing and append both cases and corresponding results after implementation note.
 
+8. When inserting entities directly into database through SQL script, always explicitly enumerate 
+   list of fields in INTO clause.
+
 
 
